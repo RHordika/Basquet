@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 score1 = score1 + 1;
+                scoring(); //actualiza la visualización del score
 
             }
         });
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View view) {
 
                score2 = score2 + 1;
+               scoring();
 
            }
        });
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 score1 = score1 + 2;
+                scoring();
 
             }
         });
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 score2 = score2 + 2;
+                scoring();
 
             }
         });
@@ -68,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 score1 = score1 + 3;
+                scoring();
 
             }
         });
@@ -77,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 score2 = score2 + 3;
+                scoring();
 
             }
         });
@@ -87,10 +93,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void scoring(){
 
-        int scoreMessage = score1;
+        String scoreMessage = "" + score1;
         binding.scoreA.setText(scoreMessage);
 
-        int scoreMessage2 = score2;
+        String scoreMessage2 = "" + score2;
         binding.scoreB.setText(scoreMessage2);
 
     }
